@@ -5,6 +5,9 @@ document.getElementById('signUp').onclick = ()=>{
     var password2 = document.getElementById('password2').value;
     var role = document.getElementById('role').value;
     
+    document.getElementById('section').style.display = 'none';
+    document.getElementById('loader').style.display = 'block';
+    
 
     // signup logic
     if(password1 ==  password2){
@@ -35,9 +38,9 @@ document.getElementById('signUp').onclick = ()=>{
             console.log(doc.id, " => ", doc.data());
             var userType = doc.data().Role;
             console.log(userType);
-            if(userType === admin){
+            if(userType == 'admin'){
               window.location.href="/admin.html";
-            }else if (userType == accountant){
+            }else if (userType == 'accountant'){
               window.location.href = "/accountant.html";
             }else{
               window.location.href = "/index.html";
