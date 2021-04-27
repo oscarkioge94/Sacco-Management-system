@@ -1,0 +1,50 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20vh;
+  left: 60vh;
+  height: 70vh;
+  width: 30%;
+  border: 1px solid whitesmoke;
+}
+
+.section input {
+  height: 50px;
+  border: 1px solid whitesmoke;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  font-family: sans-serif;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.section a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+  padding: 10px 20px;
+  background-color: #e1306c;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.section Label {
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+}
+#role {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  height: 30px;
+  border: 1px solid whitesmoke;
+  text-align: center;
+}
