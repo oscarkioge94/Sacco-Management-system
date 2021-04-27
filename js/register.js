@@ -35,6 +35,13 @@ document.getElementById('signUp').onclick = ()=>{
             console.log(doc.id, " => ", doc.data());
             var userType = doc.data().Role;
             console.log(userType);
+            if(userType === admin){
+              window.location.href="/admin.html";
+            }else if (userType == accountant){
+              window.location.href = "/accountant.html";
+            }else{
+              window.location.href = "/index.html";
+            }
         });
     })
     .catch((error) => {
