@@ -27,7 +27,19 @@ document.getElementById('signUp').onclick = ()=>{
           console.error("Error adding document: ", error);
       })
       .then(()=>{
-        window.location.href="../index.html";
+        firebase.firestore().collection("users").where("UserId", "==", user.uid)
+    .get()
+    .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            console.log(doc.id, " => ", doc.data());
+            var userType = doc.data().Role;
+            console.log(userType);
+        });
+    })
+    .catch((error) => {
+        console.log("Error getting documents: ", error);
+    });
       })
     // ...
   })
