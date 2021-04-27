@@ -27,7 +27,7 @@ document.getElementById('signUp').onclick = ()=>{
           console.error("Error adding document: ", error);
       })
       .then(()=>{
-        window.location.href="../login.html";
+        window.location.href="../index.html";
       })
     // ...
   })
