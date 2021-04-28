@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/addMember.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="left">
+            <h2>Fanisi Sacco</h2>
+            <div class="profile__info">
+                <div class="avatar"></div>
+                <div class="middle__info">
+                    <h2>Susan Kimani</h2>
+                    <p>Administrator</p>
+                </div>
+                <!-- <img src="./caret-down-solid.svg" alt=""> -->
+            </div>
+            <div class="left__links">
+                <a href="">Dashboard</a>
+                <a href="">Add members</a>
+                <a href="">Member List</a>
+                <a href="">Loan Requests</a>
+                <a href="">Loan List</a>
+                <a href="">Inbox</a>
+                <a href="">Settings</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="icons">
+                    <img src="/mail.png" alt="">
+                    <img src="/notification.png" alt="">
+                    <img src="/settings.png" alt="">
+                </div>
+
+            </div>
+            <p>Add Members</p>
+            <div class="input">
+                <p>Full Name:</p>
+                <input id="name" type="text" placeholder="Enter the Members Full Name">
+            </div>
+
+            <div class="input">
+                <p>Id Number:</p>
+                <input id="Id" type="text" placeholder="Enter their Id Number">
+            </div>
+            <div class="input">
+                <p>PhoneNumber:</p>
+                <input id="phoneNumber" type="text" placeholder="Enter their Phone Number">
+            </div>
+            <div class="input">
+                <p>Email:</p>
+                <input id="email" type="email" placeholder="Enter their Email Address">
+            </div>
+            <div class="input">
+                <p>Assigned Password:</p>
+                <input id="password" type="text" placeholder="Enter their Password">
+            </div>
+
+            <a id="addMember">Add Member</a>
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
