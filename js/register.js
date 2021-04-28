@@ -58,7 +58,12 @@ document.getElementById('signUp').onclick = ()=>{
     var errorMessage = error.message;
     // ..
   });
+    }else{
+      window.alert('please enter matching passwords');
+      document.getElementById('section').style.display = 'block';
+      document.getElementById('loader').style.display = 'none';
     }
+
 
    
 
